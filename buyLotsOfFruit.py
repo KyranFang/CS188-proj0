@@ -27,17 +27,8 @@ from __future__ import print_function
 fruitPrices = {'apples': 2.00, 'oranges': 1.50, 'pears': 1.75,
                'limes': 0.75, 'strawberries': 1.00}
 
-
 def buyLotsOfFruit(orderList):
-    """
-        orderList: List of (fruit, numPounds) tuples
-
-    Returns cost of order
-    """
-    totalCost = 0.0
-    "*** YOUR CODE HERE ***"
-    return totalCost
-
+    return sum([fruitPrices[i[0]] * i[1] for i in orderList])
 
 # Main Method
 if __name__ == '__main__':
